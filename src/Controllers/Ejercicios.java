@@ -47,19 +47,23 @@ public class Ejercicios {
         List<Integer> pares = new ArrayList<Integer>();
         List<Integer> impares = new ArrayList<Integer>();
         List<List> pareseimpares = new ArrayList<List>();
-        for (int i = 0; i < 100; i++) {
-            if ( i % 2 == 0 ) {
-                pares.add(i);
+
+        int cant = 0;
+
+        while (cant <= 100) {
+            if ( cant % 2 == 0 ) {
+                pares.add(cant);
             }
             else {
-                impares.add(i);
+                impares.add(cant);
             }
+            cant += 1;
         }
+
         pareseimpares.add(pares);
         pareseimpares.add(impares);
 
         return pareseimpares;
-
     }
 
 
