@@ -1,6 +1,7 @@
 package Controllers;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Ejercicios {
@@ -180,13 +181,18 @@ public class Ejercicios {
         System.out.println( "Cantidad de vocales en u: " + cantu );
     }
 
-    public static boolean compararPalabras(String palabra1, String palabra2) {
+    public static boolean compararPalabras (String palabra1, String palabra2) {
         if (palabra1==palabra2) {
             return true;
         }
         else {
             return false;
         }
+    }
+
+    public static Date consultarFecha () {
+        Date fechaActual = new Date();
+        return  fechaActual;
     }
 
 

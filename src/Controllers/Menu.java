@@ -1,4 +1,5 @@
 package Controllers;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
@@ -82,7 +83,6 @@ public class Menu {
         String palabra1 = sc.next();
         System.out.println("Ingrese la segunda palabra");
         String palabra2 = sc.next();
-
         boolean resultado = Ejercicios.compararPalabras(palabra1,palabra2 );
 
         if (resultado){
@@ -91,6 +91,12 @@ public class Menu {
         else {
             System.out.println("La palabras son diferentes");
         }
+    }
+
+    public static void consultarFecha (Scanner sc) {
+        Date fechaActual = Ejercicios.consultarFecha();
+        System.out.println("La fecha actual es " + fechaActual);
+
     }
 
 
