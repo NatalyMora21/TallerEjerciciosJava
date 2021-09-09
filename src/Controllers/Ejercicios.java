@@ -30,8 +30,13 @@ public class Ejercicios {
 
     public static double calcularAreaCirculo(double radio) {
 
-
         return Math.PI * Math.pow(radio,2);
 
     }
+
+    public static double calcularIva (double precio) {
+         final int iva = 20;
+         return ( iva * precio /100 );
+    }
+
 }

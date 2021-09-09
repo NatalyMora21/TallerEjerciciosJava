@@ -20,4 +20,15 @@ public class Menu {
         System.out.println("El área del circulo es: " + area);
 
     }
+
+    public static void calcularIva(Scanner sc) {
+        System.out.println("Ingrese el precio del producto");
+        String radio = sc.next();
+        double precio = Double.parseDouble (radio);
+        double preciototal = Ejercicios.calcularAreaCirculo(precio);
+
+        System.out.println("El precio total del producto más el IVA es: " + preciototal);
+
+    }
+
 }
