@@ -49,4 +49,16 @@ public class Menu {
 
     }
 
+    public static void validarNumeroPositivo (Scanner sc) {
+
+        boolean espositivo;
+        do {
+            System.out.println("Ingrese un número positivo");
+            double numerodouble = Double.parseDouble ( sc.next() );
+            espositivo = Ejercicios.esNumeropositivo(numerodouble);
+
+        } while (!espositivo);
+
+    }
+
 }

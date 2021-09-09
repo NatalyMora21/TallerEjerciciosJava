@@ -75,7 +75,6 @@ public class Ejercicios {
         int cant = 0;
 
         for (int i = 0; i <= 100; i++) {
-
             if ( i % 2 == 0 ) {
                 pares.add(i);
             }
@@ -89,6 +88,13 @@ public class Ejercicios {
 
         return pareseimpares;
     }
+
+    public static boolean esNumeropositivo (double num) {
+
+        boolean espositvo = num >= 0 ?  true : false;
+        return espositvo;
+    }
+
 
 
 }
