@@ -75,5 +75,14 @@ public class Menu {
         Ejercicios.reemplazarletra(frase);
     }
 
+    public static void eliminarespacio(Scanner sc) {
+        System.out.println("Ingrese una frase");
+        String frase = sc.next();
+        String fraseAjustada = Ejercicios.eliminarEspacios(frase);
+
+        System.out.println("Frase sin espacios: "+fraseAjustada);
+
+    }
+
 
 }

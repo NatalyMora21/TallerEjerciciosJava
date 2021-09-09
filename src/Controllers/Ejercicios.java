@@ -137,4 +137,9 @@ public class Ejercicios {
 
         return textoreplace + " " + frase;
     }
+
+    public static String eliminarEspacios(String frase) {
+
+        return frase.replace(" ","");
+    }
 }
