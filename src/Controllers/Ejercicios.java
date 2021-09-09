@@ -128,6 +128,13 @@ public class Ejercicios {
 
         }
 
+    }
 
+    public static String reemplazarletra(String frase) {
+
+        String texto = "La sonrisa sera la mejor arma contra la tristeza";
+        String textoreplace = texto.replace("a","e");
+
+        return textoreplace + " " + frase;
     }
 }

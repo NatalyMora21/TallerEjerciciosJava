@@ -62,11 +62,18 @@ public class Menu {
 
     }
 
-    public static void esDiaLabora(Scanner sc) {
+    public static void esDiaLaboral(Scanner sc) {
         System.out.println("Ingrese un día de la semana");
         String diaSemana = sc.next();
         Ejercicios.esDiaLabora(diaSemana.toLowerCase());
 
-
     }
+
+    public static void reemplazarletra(Scanner sc) {
+        System.out.println("Ingrese una frase");
+        String frase = sc.next();
+        Ejercicios.reemplazarletra(frase);
+    }
+
+
 }
