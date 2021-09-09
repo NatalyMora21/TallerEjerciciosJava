@@ -127,7 +127,6 @@ public class Ejercicios {
                 laboral = false;
 
         }
-
     }
 
     public static String reemplazarletra(String frase) {
@@ -141,5 +140,43 @@ public class Ejercicios {
     public static String eliminarEspacios(String frase) {
 
         return frase.replace(" ","");
+    }
+
+    public static void longitudFrase(String frase) {
+
+        int longitudFrase = frase.length();
+        int canta=0;
+        int cante=0;
+        int canti=0;
+        int canto=0;
+        int cantu=0;
+
+        String fraseSinEspacios = frase.replace(" ", "");
+
+        for (int i = 0; i < fraseSinEspacios.length(); i++) {
+            if ( fraseSinEspacios.charAt(i) == 'a') {
+                canta+=1;
+            }
+            else if ( fraseSinEspacios.charAt(i) == 'e') {
+                cante+=1;
+            }
+            else if ( fraseSinEspacios.charAt(i) == 'i') {
+                canti+=1;
+            }
+            else if (fraseSinEspacios.charAt(i) == 'o' ) {
+                canto+=1;
+            }
+            else if (fraseSinEspacios.charAt(i) == 'u' ) {
+                cantu+=1;
+            }
+        }
+
+        System.out.println( "Longitud de la frase: " + longitudFrase);
+        System.out.println( "Cantidad de vocales en una frase");
+        System.out.println( "Cantidad de vocales en a: " + canta );
+        System.out.println( "Cantidad de vocales en e: " + cante );
+        System.out.println( "Cantidad de vocales en i: " + canti );
+        System.out.println( "Cantidad de vocales en o: " + canto );
+        System.out.println( "Cantidad de vocales en u: " + cantu );
     }
 }

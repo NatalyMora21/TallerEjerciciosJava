@@ -42,7 +42,6 @@ public class Menu {
         for (Integer numero:numerospares) {
             System.out.println(numero);
         }
-
         System.out.println("--Número impares--");
         for (Integer numero:numerosimpares) {
             System.out.println(numero);
@@ -57,7 +56,6 @@ public class Menu {
             System.out.println("Ingrese un número positivo");
             double numerodouble = Double.parseDouble ( sc.next() );
             espositivo = Ejercicios.esNumeropositivo(numerodouble);
-
         } while (!espositivo);
 
     }
@@ -66,7 +64,6 @@ public class Menu {
         System.out.println("Ingrese un día de la semana");
         String diaSemana = sc.next();
         Ejercicios.esDiaLabora(diaSemana.toLowerCase());
-
     }
 
     public static void reemplazarletra(Scanner sc) {
@@ -79,9 +76,13 @@ public class Menu {
         System.out.println("Ingrese una frase");
         String frase = sc.next();
         String fraseAjustada = Ejercicios.eliminarEspacios(frase);
-
         System.out.println("Frase sin espacios: "+fraseAjustada);
+    }
 
+    public static void longitudFrase(Scanner sc) {
+        System.out.println("Ingrese una frase");
+        String frase = sc.next();
+        Ejercicios.longitudFrase(frase);
     }
 
 
