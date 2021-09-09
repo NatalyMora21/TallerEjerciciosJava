@@ -1,4 +1,5 @@
 package Controllers;
+import java.util.List;
 import java.util.Scanner;
 
 public class Menu {
@@ -28,6 +29,23 @@ public class Menu {
         double preciototal = Ejercicios.calcularAreaCirculo(precio);
 
         System.out.println("El precio total del producto más el IVA es: " + preciototal);
+
+    }
+
+    public static void calcularnumImparesPares(Scanner sc) {
+        List<List> listNumeros = Ejercicios.calcularnumImparesPares();
+        List<Integer> numerospares = listNumeros.get(0);
+        List<Integer> numerosimpares = listNumeros.get(1);
+
+        System.out.println("--Número pares--");
+        for (Integer numero:numerospares) {
+            System.out.println(numero);
+        }
+
+        System.out.println("--Número impares--");
+        for (Integer numero:numerosimpares) {
+            System.out.println(numero);
+        }
 
     }
 

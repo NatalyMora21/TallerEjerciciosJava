@@ -1,5 +1,8 @@
 package Controllers;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Ejercicios {
 
     public static void numeroMayor(){
@@ -38,5 +41,27 @@ public class Ejercicios {
          final int iva = 20;
          return ( iva * precio /100 );
     }
+
+    public static List<List> calcularnumImparesPares () {
+
+        List<Integer> pares = new ArrayList<Integer>();
+        List<Integer> impares = new ArrayList<Integer>();
+        List<List> pareseimpares = new ArrayList<List>();
+        for (int i = 0; i < 100; i++) {
+            if ( i % 2 == 0 ) {
+                pares.add(i);
+            }
+            else {
+                impares.add(i);
+            }
+        }
+        pareseimpares.add(pares);
+        pareseimpares.add(impares);
+
+        return pareseimpares;
+
+    }
+
+
 
 }
