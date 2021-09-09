@@ -1,5 +1,6 @@
 package Controllers;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Menu {
@@ -61,4 +62,11 @@ public class Menu {
 
     }
 
+    public static void esDiaLabora(Scanner sc) {
+        System.out.println("Ingrese un día de la semana");
+        String diaSemana = sc.next();
+        Ejercicios.esDiaLabora(diaSemana.toLowerCase());
+
+
+    }
 }
