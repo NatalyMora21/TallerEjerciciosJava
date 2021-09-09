@@ -195,5 +195,19 @@ public class Ejercicios {
         return  fechaActual;
     }
 
+    public static void numerosdosendos(int numero) {
+        List<Integer> numeros;
+
+        for (int i = numero; i < 1000; i+=2) {
+
+            System.out.println(i);
+
+        }
+
+
+
+
+    }
+
 
 }

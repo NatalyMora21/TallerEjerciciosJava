@@ -99,5 +99,17 @@ public class Menu {
 
     }
 
+    public static void numerosdosendos (Scanner sc) {
+        Date fechaActual = Ejercicios.consultarFecha();
+        System.out.println("Ingrese un número");
+        int num = Integer.parseInt(sc.next()); ;
+
+        Ejercicios.numerosdosendos(num);
+
+
+
+
+    }
+
 
 }
