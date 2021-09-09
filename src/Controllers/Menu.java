@@ -32,10 +32,10 @@ public class Menu {
 
     }
 
-    public static void calcularnumImparesPares(Scanner sc) {
-        List<List> listNumeros = Ejercicios.calcularnumImparesPares();
-        List<Integer> numerospares = listNumeros.get(0);
-        List<Integer> numerosimpares = listNumeros.get(1);
+    public static void calcularnumImparesPares(Scanner sc, List<List> listado ) {
+
+        List<Integer> numerospares = listado.get(0);
+        List<Integer> numerosimpares = listado.get(1);
 
         System.out.println("--Número pares--");
         for (Integer numero:numerospares) {

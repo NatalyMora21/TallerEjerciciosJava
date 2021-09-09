@@ -42,7 +42,7 @@ public class Ejercicios {
          return ( iva * precio /100 );
     }
 
-    public static List<List> calcularnumImparesPares () {
+    public static List<List> calcularnumImparesParesWhile () {
 
         List<Integer> pares = new ArrayList<Integer>();
         List<Integer> impares = new ArrayList<Integer>();
@@ -66,6 +66,29 @@ public class Ejercicios {
         return pareseimpares;
     }
 
+    public static List<List> calcularnumImparesParesFor () {
+
+        List<Integer> pares = new ArrayList();
+        List<Integer> impares = new ArrayList();
+        List<List> pareseimpares = new ArrayList();
+
+        int cant = 0;
+
+        for (int i = 0; i <= 100; i++) {
+
+            if ( i % 2 == 0 ) {
+                pares.add(i);
+            }
+            else {
+                impares.add(i);
+            }
+        }
+
+        pareseimpares.add(pares);
+        pareseimpares.add(impares);
+
+        return pareseimpares;
+    }
 
 
 }
