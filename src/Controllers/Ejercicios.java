@@ -27,4 +27,11 @@ public class Ejercicios {
             System.out.println("Los números son iguales");
         }
     }
+
+    public static double calcularAreaCirculo(double radio) {
+
+
+        return Math.PI * Math.pow(radio,2);
+
+    }
 }
