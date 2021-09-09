@@ -24,7 +24,7 @@ public class AppEjercicios {
         System.out.println("12. Comparar palabras");
         System.out.println("13. Hora actual");
         System.out.println("14. Mostar número de dos en dos hasta 100");
-        System.out.println("15. Menú de opciones");
+        System.out.println("15. Calcular número mayor");
         System.out.println("16. Calcular número mayor");
         System.out.println("17. Calcular número mayor");
         System.out.println("18. Calcular número mayor");
@@ -39,6 +39,8 @@ public class AppEjercicios {
                 Ejercicios.numeroMayor();
             case 2:
                 Menu.numeroMayor(sc);
+
+            case 3:
 
         }
 
