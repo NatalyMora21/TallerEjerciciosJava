@@ -18,9 +18,7 @@ public class Menu {
         String radio = sc.next();
         double newradio = Double.parseDouble (radio);
         double area = Ejercicios.calcularAreaCirculo(newradio);
-
         System.out.println("El área del circulo es: " + area);
-
     }
 
     public static void calcularIva(Scanner sc) {
@@ -28,13 +26,10 @@ public class Menu {
         String radio = sc.next();
         double precio = Double.parseDouble (radio);
         double preciototal = Ejercicios.calcularAreaCirculo(precio);
-
         System.out.println("El precio total del producto más el IVA es: " + preciototal);
-
     }
 
     public static void calcularnumImparesPares(Scanner sc, List<List> listado ) {
-
         List<Integer> numerospares = listado.get(0);
         List<Integer> numerosimpares = listado.get(1);
 
@@ -46,18 +41,15 @@ public class Menu {
         for (Integer numero:numerosimpares) {
             System.out.println(numero);
         }
-
     }
 
     public static void validarNumeroPositivo (Scanner sc) {
-
         boolean espositivo;
         do {
             System.out.println("Ingrese un número positivo");
             double numerodouble = Double.parseDouble ( sc.next() );
             espositivo = Ejercicios.esNumeropositivo(numerodouble);
         } while (!espositivo);
-
     }
 
     public static void esDiaLaboral(Scanner sc) {
@@ -83,6 +75,22 @@ public class Menu {
         System.out.println("Ingrese una frase");
         String frase = sc.next();
         Ejercicios.longitudFrase(frase);
+    }
+
+    public static void compararPalabras (Scanner sc) {
+        System.out.println("Ingrese la primera palabra");
+        String palabra1 = sc.next();
+        System.out.println("Ingrese la segunda palabra");
+        String palabra2 = sc.next();
+
+        boolean resultado = Ejercicios.compararPalabras(palabra1,palabra2 );
+
+        if (resultado){
+            System.out.println("La palabras son iguales");
+        }
+        else {
+            System.out.println("La palabras son diferentes");
+        }
     }
 
 

@@ -179,4 +179,15 @@ public class Ejercicios {
         System.out.println( "Cantidad de vocales en o: " + canto );
         System.out.println( "Cantidad de vocales en u: " + cantu );
     }
+
+    public static boolean compararPalabras(String palabra1, String palabra2) {
+        if (palabra1==palabra2) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+
 }
