@@ -3,6 +3,7 @@ package Controllers;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
 
 public class Ejercicios {
 
@@ -197,17 +198,64 @@ public class Ejercicios {
 
     public static void numerosdosendos(int numero) {
         List<Integer> numeros;
-
         for (int i = numero; i < 1000; i+=2) {
-
             System.out.println(i);
-
         }
+    }
 
+    public static void opcionesMenu(Scanner sc) {
 
+        System.out.println("****** GESTION CINEMATOGRÁFICA ********");
+        System.out.println("1-NUEVO ACTOR");
+        System.out.println("2-BUSCAR ACTOR");
+        System.out.println("3-ELIMINAR ACTOR");
+        System.out.println("4-MODIFICAR ACTOR");
+        System.out.println("5-VER TODOS LOS ACTORES");
+        System.out.println("6- VER PELICULAS DE LOS ACTORES");
+        System.out.println("7-VER CATEGORIA DE LAS PELICULAS DE LOS ACTORES");
+        System.out.println("8-SALIR");
 
+        int opcion;
+
+        do{
+            System.out.println("Ingrese una opción del Menú");
+            opcion = Integer.parseInt(sc.next());
+
+            switch (opcion){
+                case 1:
+                    System.out.println("1-NUEVO ACTOR");
+
+                case 2:
+                    System.out.println("2-BUSCAR ACTOR");
+
+                case 3:
+                    System.out.println("3-ELIMINAR ACTOR");
+
+                case 4:
+                    System.out.println("4-MODIFICAR ACTOR");
+
+                case 5:
+                    System.out.println("5-VER TODOS LOS ACTORES");
+
+                case 6:
+                    System.out.println("6- VER PELICULAS DE LOS ACTORES");
+
+                case 7:
+                    System.out.println("7-VER CATEGORIA DE LAS PELICULAS DE LOS ACTORES");
+
+                case 8:
+                    System.out.println("8-SALIR");
+
+                default:
+                    System.out.println("OPCIÓN INCORRECTA INGRESE UN NÚMERO NUEVO");
+            }
+        }
+        while (opcion!=8);
 
     }
+
+
+
 
 
 }

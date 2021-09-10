@@ -1,4 +1,6 @@
 package Controllers;
+import Models.Persona;
+
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -103,13 +105,33 @@ public class Menu {
         Date fechaActual = Ejercicios.consultarFecha();
         System.out.println("Ingrese un número");
         int num = Integer.parseInt(sc.next()); ;
-
         Ejercicios.numerosdosendos(num);
+    }
 
+    public static  void crearPersona(Scanner sc) {
+        System.out.println("Ingrese su nombre");
+        String nombre = sc.next();
+        System.out.println("Ingrese su edad");
+        int edad = sc.nextInt();
+        System.out.println("Ingrese su sexo");
+        char sexo = sc.next().charAt(0);
+        System.out.println("Ingrese su peso");
+        double peso = sc.nextDouble();
+        System.out.println("Ingrese su altura");
+        double altura = sc.nextDouble();
 
-
+        Persona persona1 = new Persona(nombre,edad,sexo,peso,altura, "");
+        Persona persona2 = new Persona(nombre,edad,sexo);
+        Persona persona3 = new Persona();
+        persona3.setNombre(nombre);
+        persona3.setEdad(edad);
+        persona3.setSexo(sexo);
+        persona3.setPeso(peso);
+        persona3.setAltura(altura);
 
     }
+
+
 
 
 }
