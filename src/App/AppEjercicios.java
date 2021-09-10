@@ -57,6 +57,16 @@ public class AppEjercicios {
                 Menu.validarNumeroPositivo(sc);
             case 8:
                 Menu.esDiaLaboral(sc);
+            case 9:
+                Menu.reemplazarletra(sc);
+            case 10:
+                Menu.eliminarespacio(sc);
+            case 11:
+                Menu.longitudFrase(sc);
+            case 12:
+                Menu.compararPalabras(sc);
+            case 13:
+                Menu.consultarFecha(sc);
             case 14:
                 Menu.numerosdosendos(sc);
             case 15:
@@ -68,7 +78,6 @@ public class AppEjercicios {
             case 18:
                 Menu.crearPersona(sc);
         }
-
 
     }
 }
