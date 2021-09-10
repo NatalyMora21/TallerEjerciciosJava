@@ -1,2 +1,4 @@
-package Models;public class VideoJuego {
+package Models;
+
+public class VideoJuego {
 }
