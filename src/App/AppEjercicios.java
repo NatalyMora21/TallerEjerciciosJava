@@ -63,7 +63,12 @@ public class AppEjercicios {
                 Ejercicios.opcionesMenu(sc);
             case 16:
                 Menu.crearPersona(sc);
+            case 17:
+                Menu.crearPersona(sc);
+            case 18:
+                Menu.crearPersona(sc);
         }
+
 
     }
 }
