@@ -86,7 +86,7 @@ public class Electrodomesticos {
 
     }
 
-    public int precioFinal(){
+    public int precioConsumo(){
         int precioConsumo=0;
         switch (this.consumo){
             case 'A':
@@ -128,6 +128,10 @@ public class Electrodomesticos {
             precioTamano = 100;
         }
         return precioTamano;
+    }
+
+    public int precioFinal () {
+        return precioConsumo() + precioTamaño();
     }
 
 }
