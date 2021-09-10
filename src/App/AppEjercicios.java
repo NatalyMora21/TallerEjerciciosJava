@@ -1,4 +1,5 @@
 package App;
+import java.util.List;
 import java.util.Scanner;
 import Controllers.Ejercicios;
 import Controllers.Menu;
@@ -28,6 +29,9 @@ public class AppEjercicios {
         System.out.println("16. Calcular número mayor");
         System.out.println("17. Calcular número mayor");
         System.out.println("18. Calcular número mayor");
+
+        String opcionMenu= sc.next();
+        menuOption (Integer.parseInt(opcionMenu));
     }
 
     private static void menuOption(int option){
@@ -39,9 +43,26 @@ public class AppEjercicios {
                 Ejercicios.numeroMayor();
             case 2:
                 Menu.numeroMayor(sc);
-
             case 3:
-
+                Menu.calcularAreaCirculo(sc);
+            case 4:
+                Menu.calcularIva(sc);
+            case 5:
+                List<List> listado = Ejercicios.calcularnumImparesParesWhile();
+                Menu.calcularnumImparesPares(sc,listado);
+            case 6:
+                List<List> listadon = Ejercicios.calcularnumImparesParesFor();
+                Menu.calcularnumImparesPares(sc,listadon);
+            case 7:
+                Menu.validarNumeroPositivo(sc);
+            case 8:
+                Menu.esDiaLaboral(sc);
+            case 14:
+                Menu.numerosdosendos(sc);
+            case 15:
+                Ejercicios.opcionesMenu(sc);
+            case 16:
+                Menu.crearPersona(sc);
         }
 
     }
