@@ -1,5 +1,6 @@
 package Controllers;
 
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -8,7 +9,7 @@ import java.util.Scanner;
 public class Ejercicios {
 
     public static void numeroMayor(){
-
+        System.out.println("--- Opción 1. Función que compara dos números ---");
         double num1 = 5;
         double num2 = 6;
         if (num1 > num2){
@@ -191,8 +192,9 @@ public class Ejercicios {
         }
     }
 
-    public static Date consultarFecha () {
-        Date fechaActual = new Date();
+    public static DateTimeFormatter consultarFecha () {
+
+        DateTimeFormatter fechaActual = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm");
         return  fechaActual;
     }
 
